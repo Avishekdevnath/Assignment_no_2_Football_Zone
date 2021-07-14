@@ -1,0 +1,377 @@
+/* -------------------------
+    Welcome to CSS File
+--------------------------- */
+
+
+
+
+/* -------------------------
+    All Common tags
+--------------------------- */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* -------------------------
+      Home Section
+--------------------------- */
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;   
+
+}
+
+
+.home-cld h1 {
+    width: 485px;
+    height: 230px;
+    font-size: 65px;
+    margin-bottom: 80px;
+    color: white;
+}
+.home-cld img{
+    width: 100%;
+}
+
+.btn{
+    text-decoration: none;
+    width: 172px;
+    height: 44px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    transition: transform 1s , border-radius 1s;
+
+}
+.btn:hover {
+    transform: scale(1.4);
+   border-radius: 25px;
+
+}
+
+/* -------------------------
+      Players Section
+--------------------------- */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.last-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.all-article{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    width: 1050px;
+    margin-top: 70px;
+    
+}
+
+.players-article{
+    width: 330px;
+    height: 474px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);    
+}
+
+
+.player{
+    padding: 15px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-img{
+    width: 300px;
+    height: 256px;
+}
+
+.player > h3{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 16px;
+    padding: 0;
+}
+
+.player > p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-top: -10px;
+    padding: 0;
+}
+
+
+/* ------------------------------------
+      News section styles
+--------------------------------------- */
+.last-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.last-sec h2 {
+    font-size: 40px;
+}
+.news {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.news-img img {
+    width: 300px;
+}
+
+.news-text {
+    margin-left: 15px;
+}
+
+.news-text p{
+    width: 500px;
+}
+
+/* -------------------------
+        Photo Gallary
+--------------------------- */
+.last-sec-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.last-sec-2 >div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.last-img img{
+
+    width: 300px;
+    height: 300px;
+}
+
+
+/* -----------------------------------
+            Footer Section
+------------------------------------ */
+
+footer{
+
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    
+}
+
+.footer-logo > img{
+    width: 483.87px;
+    height: 110px;
+}
+
+.footer-social > i{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-bottom: -10px;   
+    padding: 10px;
+    color: #969BAB;
+    background-color: #0b0d1725;
+    border-radius: 25px;
+}
+
+.footer-courtesy > p{
+    color: #000000;
+    font-size: 18px;
+}
+
+
+
+/* --------------------
+  Media Query Styles
+----------------------- */
+
+/* --------------------
+    Mobile Styles
+----------------------- */
+
+@media only screen and (max-width:688px) {
+
+    /* --------------------
+        Home Section
+----------------------- */
+    body{
+        width: 100%;       
+    }
+
+
+    
+    .home-cld {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .home-cld a{
+        margin-top: -10%;
+    }
+
+    .home-cld h1 {
+        width: 100%;
+        font-size: 36px;
+        width: 278px;
+        height: 138px;
+
+    }
+
+    
+    /* --------------------
+        Player Section
+----------------------- */
+    .all-article{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+        width: 100%;
+        margin-top: 70px;     
+        
+    }
+        
+    .players-article{
+        width: 100%;
+        height: 474px;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        box-shadow: none;
+    }
+
+
+    .player{
+        padding: 15px;  
+        width: 330px;
+        height: 430px;        
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+
+
+    .players-article p {
+        width: 300px;
+        height: 154px;
+    }
+
+
+
+
+    
+/* ------------------------------------
+      News section styles
+--------------------------------------- */
+.last-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.last-sec h2 {
+    font-size: 40px;
+}
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.news-img img {
+    width: 300px;
+}
+
+
+.news-text p{
+    width: 300px;
+    height: 154px;
+}
+
+/* -------------------------
+        Photo Gallary
+--------------------------- */
+.last-sec-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.last-sec-2 > h2 {
+    font-size: 50px;
+}
+.last-sec-2 >div {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.last-img img{
+
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+
+    /* -------------------------
+        Footer Section
+--------------------------- */
+
+    footer {
+        width: 100%;
+        display: flex;
+    }
+
+    .footer-logo > img{        
+        width: 250px;
+        height: 90px;        
+    }
+}
